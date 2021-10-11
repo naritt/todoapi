@@ -28,6 +28,7 @@ jobs:
         name: Build & push Docker image
         with:
           image: excomaster/todoapi
+          tags: latest
           registry: docker.io
           dockerfile: testapi/Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
